@@ -14,7 +14,7 @@ function App() {
         },
       };
     }),
-    ...data.attacks.map<ElementDefinition>((attack) => {
+    ...data.attacks.filter(a => a.efficiency !== 1).map<ElementDefinition>((attack) => {
       return {
         group: 'edges',
         data: {

@@ -19,15 +19,37 @@ import steel from './icons/steel.png'
 import water from './icons/water.png'
 
 export const stylesheet: Stylesheet[] = [
+    // edges
     {
         "selector": "edge",
         "style": {
             "line-opacity": .5,
             "curve-style": "bezier",
             "target-arrow-shape": "vee",
-            "line-color": "#ccc"
         }
     },
+    {
+        "selector": 'edge[efficiency = 0]',
+        "style": {
+            "line-color": "#B00020",
+            "target-arrow-color": "#B00020"
+        }
+    },
+    {
+        "selector": 'edge[efficiency = 0.5]',
+        "style": {
+            "line-color": "#FFC107",
+            "target-arrow-color": "#FFC107"
+        }
+    },
+    {
+        "selector": 'edge[efficiency = 2]',
+        "style": {
+            "line-color": "#00796B",
+            "target-arrow-color": "#00796B"
+        }
+    },
+    // Nodes
     {
         "selector": "node",
         "style": {
