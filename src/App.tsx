@@ -11,7 +11,6 @@ function App() {
         group: 'nodes',
         data: {
           id: type,
-          label: type,
         },
       };
     }),
@@ -22,7 +21,6 @@ function App() {
           id: `${attack.attacker}->${attack.defender}`,
           source: attack.attacker,
           target: attack.defender,
-          label: attack.efficiency.toString(),
           efficiency: attack.efficiency,
         },
       };
